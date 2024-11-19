@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de IMC e Estado Corporal</h2>
+        <form id="formIMC">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" required>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+            </select>
+            
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" required>
+            
+            <label for="altura">Altura (m):</label>
+            <input type="number" step="0.01" id="altura" required>
+            
+            <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+        </form>
+
+        <div id="resultado">
+            <h3>Resultado</h3>
+            <p id="infoResultado"></p>
+        </div>
+
+        <hr>
+
+        <!-- Fale Conosco -->
+        <div class="fale-conosco">
+            <h3>Fale Conosco</h3>
+            <form id="contatoForm">
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

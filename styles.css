@@ -1,0 +1,101 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #00aaff;
+}
+
+label {
+    margin: 10px 0 5px;
+    display: block;
+    color: #fff;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+input, select, textarea {
+    font-size: 16px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0055a5;
+}
+
+button:active {
+    background-color: #004e8c;
+}
+
+#resultado {
+    display: none;
+    margin-top: 20px;
+}
+
+hr {
+    border: 1px solid #444;
+    margin: 20px 0;
+}
+
+/* Estilos Fale Conosco */
+.fale-conosco {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fale-conosco form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea, input[type="email"] {
+    font-size: 16px;
+}
+
+/* Estilos para o formulário de contato */
+.fale-conosco button {
+    background-color: #00cc66;
+}
+
+.fale-conosco button:hover {
+    background-color: #009944;
+}
